@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Survey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SURVEY PAGE -->
+  <div class="container" id="surveyPage">
+    <h2>Quick Survey</h2>
+
+    <form id="surveyForm">
+      <label>
+        Name (optional)
+        <input type="text" id="name" placeholder="Enter your name">
+      </label>
+
+      <label>
+        Age
+        <select id="age" required>
+          <option value="">Select age</option>
+          <option>18-24</option>
+          <option>25-34</option>
+          <option>35-44</option>
+          <option>45+</option>
+        </select>
+      </label>
+
+      <label>
+        Gender
+        <select id="gender" required>
+          <option value="">Select gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Prefer not to say</option>
+        </select>
+      </label>
+
+      <label class="question">
+        Are you single?
+      </label>
+
+      <div class="radio-group">
+        <label><input type="radio" name="single" value="yes" required> Yes</label>
+        <label><input type="radio" name="single" value="no"> May jowa nako</label>
+        <label><input type="radio" name="single" value="dontcare"> Don't care</label>
+      </div>
+
+      <button type="submit">Submit Survey</button>
+    </form>
+  </div>
+
+  <!-- VIDEO PAGE YES / DONT CARE -->
+<!-- VIDEO PAGE YES / DONT CARE -->
+<div class="video-screen hidden" id="videoYes">
+
+  <div class="text-screen hidden" id="text1">
+    <p>mag confess kana kasi!</p>
+  </div>
+
+  <div class="text-screen hidden" id="text2">
+    <p>di joke lang HAHAHAHAHA</p>
+  </div>
+
+  <!-- TIKTOK VIDEO (YES) -->
+  <div id="yesVideo" class="hidden tiktok-wrapper"></div>
+
+</div>
+
+
+<!-- VIDEO PAGE NO -->
+<div class="video-screen hidden" id="videoNo">
+
+  <div class="text-screen hidden" id="noText1">
+    <p>WEHHH SURE KA??</p>
+  </div>
+
+  <div class="text-screen hidden" id="noText2">
+    <p>AYIEEE SANAOL!!</p>
+  </div>
+
+  <!-- TIKTOK VIDEO (NO) -->
+  <div id="noVideo" class="hidden tiktok-wrapper"></div>
+
+</div>
+
+
+
+</div>
+
+<!-- PUT THIS ONCE, BEFORE </body> -->
+<script async src="https://www.tiktok.com/embed.js"></script>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
